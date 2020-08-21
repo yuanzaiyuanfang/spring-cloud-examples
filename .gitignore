@@ -1,0 +1,8 @@
+# Project exclude paths
+/.idea
+/spring-cloud-example-biz-a/target/
+/spring-cloud-example-biz-b/target/
+/spring-cloud-example-config/target/
+/spring-cloud-example-gateway/target/
+/spring-cloud-example-registry/target/
+*.iml
