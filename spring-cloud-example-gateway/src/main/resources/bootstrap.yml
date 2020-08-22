@@ -3,3 +3,20 @@ spring:
     config:
       name: spring-cloud-example-gateway #配置文件名称，多个通过逗号分隔
       uri: http://localhost:8000 #Config Server服务地址
+
+zuul:
+  host:
+    socket-timeout-millis: 60000
+    connect-timeout-millis: 60000
+
+hystrix:
+  command:
+    default:
+      execution:
+        isolation:
+          thread:
+            timeoutInMilliseconds: 60000
+
+ribbon:
+  ConnectTimeout: 6000
+  ReadTimeout: 60000
